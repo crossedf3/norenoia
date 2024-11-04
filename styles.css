@@ -17,6 +17,13 @@ header{
     height:100px;
     min-width:100vw;
     box-shadow:5px 0px 5px black;
+    animation-name:dropdown;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-in-out;
+}
+@keyframes dropdown{
+    from{transform:translateY(-100%)}
+    to{transform:translateY(0)}
 }
 .title{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -54,5 +61,5 @@ a:hover{
 }
 main{
     min-height:200vh;
-    background-image: linear-gradient(to bottom,#fff,#5578ff);
+    background-image: linear-gradient(to bottom,#fff,);
 }
