@@ -1,184 +1,58 @@
 *{
     margin:0;
-    padding:0;
     border:0;
+    padding:0;
     box-sizing: border-box;
 }
-@font-face{
-    font-family:'NORENOIA';
-    src: url(ModerniseDemoRegular.ttf);
-}
 body{
-    min-width:100vh;
     min-height:200vh;
+    min-width:100vw;
     display:flex;
     flex-direction: column;
-    background-image:linear-gradient(to bottom, #968aec,#c4c2f3);
 }
 header{
-    background-image:linear-gradient(to right,#a323df,#6d63bc);
-    z-index:2;
-    animation:0.5s,
+    background-color:#fff;
+    display:inline-block;
+    position:fixed;
+    height:100px;
+    min-width:100vw;
+    box-shadow:5px 0px 5px black;
 }
 .title{
-    color:white;
-    padding-left:20px;
-    font-family: NORENOIA;
-    letter-spacing: 5px;
-    font-weight: bold;
-    font-size: 20px;
-    padding-top:20px;
-    padding-bottom:20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding:15px;
+    padding-left:30px;
+    font-size:1.6rem;
+    white-space:nowrap;
     cursor:default;
 }
-.lineo{
-    font-size:3px;
-    background-color: white;
-    color:white;
-    position:relative;
-    bottom:90px;
-    margin-left:250px;
-    border-radius: 10px;
-}
-.linee{
-    font-size:2.5px;
-    background-color: white;
-    color:white;
-    position:relative;
-    bottom:40px;
-    margin-left:300px;
-    border-radius: 5px;
-
-}
-.liney{
-    background-color: white;
-    color:white;
-    font-size:3px;
-    opacity:75%;
-}
-.linejr{
-    background-color: #dddddd;
-    color:#dddddd;
-    font-size:3px;
-}
-.navigation{
-    background-color:#040043;
-}
-.ribbon{
+.navibar{
     list-style-type: none;
-    text-align: center;
-    font-family: sans-serif;
-    padding:1vh;
+    position:fixed;
+    font-size:2.4rem;
+    left:65vw;
+    top:30px;
+    white-space:nowrap;
 }
 .navi{
+    color:black;
     display:inline-block;
-    padding-left:2vh;
-    padding-right:1vh;
-    padding:2vh;
-    cursor:pointer;
+    padding:10px;
+    text-align:center;
+    padding-left:20px;
+    padding-right: 20px;
 }
-.separ{
-    display:inline-block;
-    font-size:20px;
-    padding-left:4.5vh;
-    padding-right:4.5vh;
-    color:white;
-    cursor:default;
-}
+
 a{
-    color:#c3c3c3;
+    color:black;
     text-decoration: none;
+    font-family:Arial, Helvetica, sans-serif;
 }
 a:hover{
-    color:#dddddd;
+    cursor:pointer;
+    color:#434343;
 }
-.backseat{
-    font-size: 200px;
-    text-align: center;
-    font-family:NORENOIA;
-    letter-spacing: 15px;
-    opacity: 30%;
-    position: fixed;
-    cursor:default;
-    min-width:100vh;
-    min-height:100vh;
-    top:40vh;
-    left:27.5vh;
-    right:25vh;
-}
-
-.backer{
-    z-index:0;
-}
-.intro{
-    z-index:10;
-    position:relative;
-    bottom:40vh;
-    top:20vh;
-    background-color: #593986;
-    margin-left:200px;
-    margin-right:200px;
-    min-width:30vh;
-    min-height:25vh;
-    border-radius:20px;
-    border:solid 5px white;
-    padding-top:10px;
-    animation-name:floater;
-    animation-duration: 0.4s;
-    animation-timing-function: ease-in-out;
-    animation-fill-mode: forwards;
-    box-shadow: 1px 1px 20px #6d63bc;
-}
-@keyframes floater{
-    0%{
-        transform:translateY(60%)
-    }
-    100%{
-        transform:translateY(0)
-    }
-}
-
-.intro h3{
-    font-size:30px;
-    font-family:verdana;
-    color:#f3f3f3;
-    text-align: center;
-}
-.intro p{
-    font-size:22.5px;
-    text-align:center;
-    margin:5px;
-    padding-top:25px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color:#f3f3f3;
-}
-.teamboard{
-    position:relative;
-    background-image:linear-gradient(to bottom,#593986,#6d63bc);
-    top:250px;
-    left:50px;
-    min-width:33vh;
-    min-height: 10vh;
-    margin-right: 1250px;
-    opacity: 75%;
-    animation-name:floater;
-    animation-duration: 0.65s;
-    animation-timing-function: ease-in-out;
-    animation-fill-mode: forwards;
-    box-shadow: 1px 1px 20px #6d63bc;
-    
-}
-.teamboard-text{
-    position:relative;
-    padding-left:5px;
-    top:199px;
-    left:55px;
-    margin-right: 300px;
-    font-size: 38px;
-    color:#ffffff;
-    animation-name:floater;
-    animation-duration: 0.65s;
-    animation-timing-function: ease-in-out;
-    animation-fill-mode: forwards;
-    font-family: Arial, Helvetica, sans-serif;
+main{
+    min-height:200vh;
+    background-image: linear-gradient(to bottom,#fff,#5578ff);
 }
