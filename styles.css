@@ -11,6 +11,7 @@ body{
     flex-direction: column;
 }
 header{
+    z-index: 30;
     background-color:#fff;
     display:inline-block;
     position:fixed;
@@ -33,7 +34,7 @@ header{
     white-space:nowrap;
     cursor:default;
 }
-.navibar{
+.navibar1{
     list-style-type: none;
     position:fixed;
     font-size:2.4rem;
@@ -41,7 +42,7 @@ header{
     top:30px;
     white-space:nowrap;
 }
-.navi{
+.navi1{
     color:black;
     display:inline-block;
     padding:10px;
@@ -49,17 +50,136 @@ header{
     padding-left:20px;
     padding-right: 20px;
 }
-
-a{
+.navibar2{
+    background-color:#000;
+    margin-top:101px;
+    padding:2.5px;
+    border-radius: 4px;
+    box-shadow:5px 0px 5px black;
+    position:fixed;
+    min-width:100vw;
+    z-index:10;
+}
+.navi2{
+    font-size:2rem;
+    margin:0.5px;
+    border:solid 1.5px #f1f1f1;
+}
+.navi1 a{
     color:black;
     text-decoration: none;
     font-family:Arial, Helvetica, sans-serif;
 }
-a:hover{
+.navbar-drop{
+    display:inline-block;
+    position: relative;
+    width:60px;
+    height:60px;
+    background-color:transparent;
+    z-index:100;
+    bottom:80px;
+    left:80vw;
+    cursor:pointer;
+}
+.hamburger-blue{
+    width:60px;
+    position:absolute;
+    top:0px;
+}
+.hamburger{
+    width:60px;
+    position:absolute;
+    top:0px;
+}
+.navi1 a:hover{
     cursor:pointer;
     color:#434343;
 }
+.navi2 a{
+    color:#f1f1f1;
+    text-decoration: none;
+    font-family:Arial, Helvetica, sans-serif;
+}
+.navi2 a:hover{
+    cursor:pointer;
+    color:#d2d2d2;
+}
+@media(max-width:700px){
+#dropbutton{
+    display:grid;
+}
+.navibar1{
+    display:none;
+}
+}
+@media(min-width:700px){
+#dropbutton{
+    display:none;
+}
+.navibar1{
+    display:inline-block;
+}
+}
+
 main{
     min-height:200vh;
-    background-image: linear-gradient(to bottom,#fff,);
+    background-image: linear-gradient(to bottom,#fff,#f1f1f1);
 }
+.intro{
+    position:relative;
+    text-align:center;
+    font-size:3rem;
+    top:20rem;
+    opacity:0;
+    animation-name:float;
+    animation-duration: 3.5s;
+    animation-delay:.5s;
+    animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+    animation-fill-mode: forwards;
+    cursor:default;
+}
+@keyframes float{
+    from{transform:translateY(100%); opacity:0}
+    to{transform: translateY(0%); opacity:100%}
+}
+.head1{
+    font-family: tahoma;
+    font-weight: 200px;
+}
+
+.introp{
+    padding-top:20px;
+    font-size:2.6rem;
+    font-weight: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.teamboard{
+    position:relative;
+    opacity:0;
+    display:flex;
+    background-color: #252525;
+    min-width:100vw;
+    min-height:30rem;
+    z-index:0;
+    top:40rem;
+    animation-name:float;
+    animation-duration: 3.5s;
+    animation-delay:.5s;
+    animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+    animation-fill-mode: forwards;
+}
+.left-team{
+    position:relative;
+    color:#d3d3d3;
+    background-color:#000;
+    width:2rem;
+    height:20rem;
+    margin-top:5rem;
+    margin-left:2rem;
+}
+.left-team:hover{
+    background-color: #131313;
+    color:#b3b3b3;
+}
+
