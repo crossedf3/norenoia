@@ -1,0 +1,17 @@
+body{
+    max-width:100vw;
+    max-height:100vh;
+}
+h1{
+    display:inline-block;
+    font-size:3.6rem;
+    position:static;
+    max-width:100vw;
+    max-height:100vh;
+    padding-top:47.5vh;
+    padding-left:5vw;
+    padding-right:5vw;
+    right:25vw;
+    left:25vw;
+    white-space:nowrap;
+}
