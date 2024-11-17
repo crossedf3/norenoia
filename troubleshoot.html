@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Change Image Example</title>
+
+</head>
+
+<body>
+
+    <img class="dynamic-image" src="feli.jpeg" alt="Image" id="myImage">
+
+    <button id="changeImageBtn">Change Image</button>
+
+
+    <script>
+
+        document.getElementById('changeImageBtn').addEventListener('click', function() {
+
+            const image = document.querySelector('.dynamic-image');
+
+            if (image) {
+
+                image.src = 'bhaga.jpeg'; // Change this to your second image's path
+
+            } else {
+
+                console.error('Image element not found');
+
+            }
+
+        });
+
+    </script>
+
+</body>
+
+</html>
