@@ -54,7 +54,7 @@ function changeToBhaga(){
   profilers.alt="bhaga"
 }
 function changeToTina(){
-  display.innerHTML = '<p>Name: Seftia Ramadhani <br> Role: Programmer <br> ???</p>'
+  display.innerHTML = '<p>Name: Seftia Rahmadani <br> Role: Programmer <br> Profesi dengan keterampilan luas dalam berbagai bahasa pemrograman dan teknologi. Mereka dapat mengerjakan berbagai tahap pengembangan perangkat lunak, mulai dari analisis, desain, pengkodean, hingga pengujian dan pemeliharaan. Memiliki pengetahuan tentang algoritma, struktur data, dan prinsip rekayasa perangkat lunak, serta kemampuan untuk cepat belajar dan beradaptasi dengan teknologi baru. Mereka dapat bekerja di berbagai domain, seperti aplikasi web, seluler, dan sistem tertanam.</p>'
   profilers.src="tina.jpeg";
   profilers.alt="tina"
 }
